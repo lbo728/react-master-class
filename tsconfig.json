@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "src", // 프로젝트 루트 디렉토리로부터 경로를 계산합니다.
+    "paths": {
+      "styled-components": ["node_modules/styled-components"] // 모듈 경로를 지정합니다.
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,7 +20,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
